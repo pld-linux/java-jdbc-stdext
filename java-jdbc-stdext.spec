@@ -2,7 +2,7 @@ Summary:	JDBC Standart Extension
 Summary(pl):	Standardowe rozszerzenie JDBC
 Name:		jdbc-stdext
 Version:	2.0
-Release:	1
+Release:	2
 License:	restricted, non-distributable (Sun Binary Code License - see URL)
 Group:		Development/Languages/Java
 Source0:	jdbc2_0-stdext.jar
@@ -26,6 +26,7 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_javalibdir}
 
 install %{SOURCE0} $RPM_BUILD_ROOT%{_javalibdir}
+ln -sf jdbc2_0-stdext.jar $RPM_BUILD_ROOT%{_javalibdir}/%{name}.jar
 
 %clean
 rm -rf $RPM_BUILD_ROOT
