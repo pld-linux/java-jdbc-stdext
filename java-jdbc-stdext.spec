@@ -3,27 +3,28 @@ Summary(pl):	Standardowe rozszerzenie JDBC
 Name:		jdbc-stdext
 Version:	2.0
 Release:	1
-License:	Sun Microsystems, Inc. Binary Code License
+License:	restricted, non-distributable (Sun Binary Code License - see URL)
 Group:		Development/Languages/Java
 Source0:	jdbc2_0-stdext.jar
 URL:		http://java.sun.com/products/jdbc/
+NoSource:	0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_javalibdir	/usr/share/java
 
 %description
-JDBC Standart Extension.
+JDBC 2.0 Standard Extension.
 
 %description -l pl
-Standardowe rozszerzenie JDBC.
+Standardowe rozszerzenie JDBC 2.0.
 
 %prep
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT%{_javalibdir}
+
 install %{SOURCE0} $RPM_BUILD_ROOT%{_javalibdir}
 
 %clean
