@@ -5,8 +5,6 @@ Version:	2.0
 Release:	1
 License:	Sun Microsystems, Inc. Binary Code License
 Group:		Development/Languages/Java
-Group(de):	Entwicklung/Sprachen/Java
-Group(pl):	Programowanie/Jêzyki/Java
 Source0:	jdbc2_0-stdext.jar
 URL:		http://java.sun.com/products/jdbc/
 BuildArch:	noarch
