@@ -1,5 +1,5 @@
 Summary:	JDBC Standart Extension
-Summary(pl):	Standardowe rozszerzenie JDBC
+Summary(pl.UTF-8):   Standardowe rozszerzenie JDBC
 Name:		jdbc-stdext
 Version:	2.0
 Release:	2
@@ -16,7 +16,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 JDBC 2.0 Standard Extension.
 
-%description -l pl
+%description -l pl.UTF-8
 Standardowe rozszerzenie JDBC 2.0.
 
 %prep
