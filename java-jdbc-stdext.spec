@@ -1,5 +1,5 @@
 Summary:	JDBC Standart Extension
-Summary(pl.UTF-8):   Standardowe rozszerzenie JDBC
+Summary(pl.UTF-8):	Standardowe rozszerzenie JDBC
 Name:		jdbc-stdext
 Version:	2.0
 Release:	2
