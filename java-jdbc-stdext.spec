@@ -1,17 +1,17 @@
+%include	/usr/lib/rpm/macros.java
 Summary:	JDBC Standart Extension
 Summary(pl.UTF-8):	Standardowe rozszerzenie JDBC
-Name:		jdbc-stdext
+Name:		java-jdbc-stdext
 Version:	2.0
 Release:	2
 License:	restricted, non-distributable (Sun Binary Code License - see URL)
-Group:		Development/Languages/Java
+Group:		Libraries/Java
 Source0:	jdbc2_0-stdext.jar
 URL:		http://java.sun.com/products/jdbc/
 NoSource:	0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%define		_javalibdir	%{_datadir}/java
+Obsoletes:	jdbc-stdext
 
 %description
 JDBC 2.0 Standard Extension.
@@ -23,14 +23,14 @@ Standardowe rozszerzenie JDBC 2.0.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_javalibdir}
+install -d $RPM_BUILD_ROOT%{_javadir}
 
-install %{SOURCE0} $RPM_BUILD_ROOT%{_javalibdir}
-ln -sf jdbc2_0-stdext.jar $RPM_BUILD_ROOT%{_javalibdir}/%{name}.jar
+install %{SOURCE0} $RPM_BUILD_ROOT%{_javadir}
+ln -sf jdbc2_0-stdext.jar $RPM_BUILD_ROOT%{_javadir}/jdbc-stdext.jar
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{_javalibdir}/*.jar
+%{_javadir}/*.jar
