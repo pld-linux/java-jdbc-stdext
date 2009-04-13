@@ -9,9 +9,9 @@ Group:		Libraries/Java
 Source0:	jdbc2_0-stdext.jar
 URL:		http://java.sun.com/products/jdbc/
 NoSource:	0
+Obsoletes:	jdbc-stdext
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-Obsoletes:	jdbc-stdext
 
 %description
 JDBC 2.0 Standard Extension.
