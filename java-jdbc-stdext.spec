@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.java
 Summary:	JDBC Standart Extension
 Summary(pl.UTF-8):	Standardowe rozszerzenie JDBC
 Name:		java-jdbc-stdext
